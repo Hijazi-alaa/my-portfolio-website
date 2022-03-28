@@ -12510,3 +12510,12 @@ html {
 .left-link {
     margin-right: 20px;
 }
+
+.about-link {
+    margin: 0;
+    color: white;
+}
+
+.form-button:visited {
+    content: "Sent!"
+}
