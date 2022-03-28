@@ -6,11 +6,19 @@ function sendMail(contactForm) {
         })
         .then(
             function(response) {
-                alert("SUCCESS", response);
+                console.log("SUCCESS", response);
             },
             function(error) {
-                alert("FAILED", error);
+                console.log("FAILED", error);
             }
         );
     return false;
 }
+
+const myForm = document.getElementById("contactForm");
+const messageSent = document.getElementById("submitSuccessMessage");
+
+myForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    messageSent.removeAttribute("class")
+});
