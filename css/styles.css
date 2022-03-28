@@ -12506,3 +12506,7 @@ html {
 .sub-title {
     font-family: 'Lobster', cursive;
 }
+
+.left-link {
+    margin-right: 20px;
+}
